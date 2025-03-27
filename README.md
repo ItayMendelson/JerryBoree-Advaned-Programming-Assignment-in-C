@@ -23,7 +23,6 @@ The project implements a Jerry daycare system using several generic data structu
   - `MultiValueHashTable.c`    - Generic multi-value hash table implementation
   - `JerryBoreeMain.c`         - Main application logic
   - `makefile`                 - Build configuration
-  - `configuration_example.txt` - Example configuration file
 
 
 
