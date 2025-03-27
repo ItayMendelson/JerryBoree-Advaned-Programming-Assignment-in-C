@@ -8,6 +8,24 @@ The project implements a Jerry daycare system using several generic data structu
 - **KeyValuePair**: Generic key-value pair storage
 - **HashTable**: Generic hash table with chaining for collision resolution
 - **MultiValueHashTable**: Generic hash table allowing multiple values per key
+  
+  **project:**
+  - `Defs.h`                   - Common definitions and typedefs
+  - `Jerry.h`                  - Jerry entity header
+  - `Jerry.c`                  - Jerry entity implementation
+  - `LinkedList.h`             - Generic linked list header
+  - `LinkedList.c`             - Generic linked list implementation
+  - `KeyValuePair.h`           - Generic key-value pair header
+  - `KeyValuePair.c`           - Generic key-value pair implementation
+  - `HashTable.h`              - Generic hash table header
+  - `HashTable.c`              - Generic hash table implementation
+  - `MultiValueHashTable.h`    - Generic multi-value hash table header
+  - `MultiValueHashTable.c`    - Generic multi-value hash table implementation
+  - `JerryBoreeMain.c`         - Main application logic
+  - `makefile`                 - Build configuration
+  - `configuration_example.txt` - Example configuration file
+
+
 
 ### Implementation Details ⚙️
 
