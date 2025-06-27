@@ -971,6 +971,7 @@ status letJerriesPlay(JerryBoree* daycare) {
 int main(int argc, char *argv[]) {
 
     if (argc != 3) {
+        printf("Usage: %s <number_of_planets> <configuration_file>\n", argv[0]);
         return 1;
     }
 
@@ -1003,7 +1004,11 @@ int main(int argc, char *argv[]) {
 
     status result = loadConfigurationFile(daycare, configFile, numberOfPlanets);
     if (result != success) {
-        printf("A memory problem has been detected in the program \n");
+        printf("A memory problem has been detected in the program\n"
+       "Failed to load configuration file '%s'.\n"
+       "Please ensure the file exists, is properly formatted,\n"
+       "and that the number of planets you provided matches the number listed in the file.\n",
+       argv[2]);
         destroyJerryBoree(&daycare);
         return 1;
     }
